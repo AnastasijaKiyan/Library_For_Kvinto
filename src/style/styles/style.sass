@@ -1,0 +1,79 @@
+$size-null:0
+$size-ten:10
+$size-hundred:100
+$color-text-main: rgb(56, 56, 56)
+$bg-color-main:rgb(231, 226, 226)
+$color-brown: brown
+$main-font:'Oswald', sans-serif
+$box-shadow: -11px 8px 23px 3px rgba(0,0,0,0.86)
+$bg-color-search:rgb(240, 239, 239)
+$flex:flex
+$wrap:wrap
+$italic:italic
+$none:none
+$baseline:baseline
+
+html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
+  margin: $size-null
+  padding: $size-null
+  border: $size-null
+  vertical-align: $baseline
+
+    body
+      background: $bg-color-main
+      color: $color-text-main
+      font-size: $size-ten * 2 + px
+      font-family: $main-font
+
+      a
+        text-decoration: $none
+        color: $color-text-main
+
+        &:hover
+          color: $color-brown
+
+      .App
+        display: $flex
+        flex-wrap: $wrap
+        padding: $size-ten * 2 + px
+
+        .section
+          flex-basis: $size-hundred * 2.8 + px
+          margin: $size-ten
+
+        .list
+          box-shadow: $box-shadow
+          padding-left: $size-ten / 5 + px
+          border-radius: $size-ten / 5 + px
+
+      .inputs
+        display: $flex
+        flex-wrap: $wrap
+        padding: $size-ten * 2 + px
+
+        .search
+          display: $flex
+          flex-wrap: $wrap
+          width: 275px
+          height: $size-ten * 3.5 + px
+          border-radius: $size-ten / 5 + px
+          margin: $size-ten * 3 + px
+          margin-bottom: $size-null
+          background-color: $bg-color-search
+          color: $color-text-main
+          font-style: $italic
+          font-size: $size-ten * 1.6 + px
+
+       .checbox
+          width: $size-hundred *5 + px
+          height: $size-ten * 3.5 + px
+          margin: $size-ten * 3 + px
+          margin-bottom: $size-null
+
+
+
+
+
+
+
+
