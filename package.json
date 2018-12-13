@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "./node_modules/.bin/babel --out-file ./public/main.js ./src --extensions=\".tsx, .ts\" -c ./.babelrc",
     "compile": "tsc ./src/index.tsx --jsx react --pretty --outDir build",
+    "dev": "./node_modules/.bin/webpack-dev-server --config ./webpack.dev.config.js --watch",
     "prod": "./node_modules/.bin/webpack --config ./webpack.prod.config.js"
   },
   "keywords": [],
@@ -31,7 +32,8 @@
     "ts-loader": "^5.3.1",
     "typescript": "^3.2.2",
     "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   },
   "dependencies": {
     "react": "^16.6.3",

@@ -19,60 +19,57 @@ html, body, div, span, h1 p, ol, ul, li, fieldset, label, legend
   border: $size-null
   vertical-align: $baseline
 
-    body
-      background: $bg-color-main
-      color: $color-text-main
-      font-size: $size-ten * 2 + px
-      font-family: $main-font
+body
+  background: black
+  color: $color-text-main
+  font-size: $size-ten * 2 + px
+  font-family: $main-font
 
-      a
-        text-decoration: $none
-        color: $color-text-main
+a
+  text-decoration: $none
+  color: $color-text-main
 
-        &:hover
-          color: $color-brown
+  &:hover
+    color: $color-brown
 
-      .App
-        display: $flex
-        flex-wrap: $wrap
-        padding: $size-ten * 2 + px
+.inputs
+  display: $flex
+  flex-wrap: $wrap
+  padding: $size-ten * 2 + px
 
-        .section
-          flex-basis: $size-hundred * 2.8 + px
-          margin: $size-ten
+  .search
+    display: $flex
+    flex-wrap: $wrap
+    width: 275px
+    height: $size-ten * 3.5 + px
+    border-radius: $size-ten / 5 + px
+    margin: $size-ten * 3 + px
+    margin-bottom: $size-null
+    background-color: $bg-color-search
+    color: $color-text-main
+    font-style: $italic
+    font-size: $size-ten * 1.6 + px
 
-        .list
-          box-shadow: $box-shadow
-          padding-left: $size-ten / 5 + px
-          border-radius: $size-ten / 5 + px
-
-      .inputs
-        display: $flex
-        flex-wrap: $wrap
-        padding: $size-ten * 2 + px
-
-        .search
-          display: $flex
-          flex-wrap: $wrap
-          width: 275px
-          height: $size-ten * 3.5 + px
-          border-radius: $size-ten / 5 + px
-          margin: $size-ten * 3 + px
-          margin-bottom: $size-null
-          background-color: $bg-color-search
-          color: $color-text-main
-          font-style: $italic
-          font-size: $size-ten * 1.6 + px
-
-       .checbox
-          width: $size-hundred *5 + px
-          height: $size-ten * 3.5 + px
-          margin: $size-ten * 3 + px
-          margin-bottom: $size-null
+  .checbox
+    width: $size-hundred * 5 + px
+    height: $size-ten * 3.5 + px
+    margin: $size-ten * 3 + px
+    margin-bottom: $size-null
 
 
+.App
+  display: $flex
+  flex-wrap: $wrap
+  padding: $size-ten * 2 + px
 
+  .section
+    flex-basis: $size-hundred * 2.8 + px
+    margin: $size-ten
 
+  .list
+    box-shadow: $box-shadow
+    padding-left: $size-ten / 5 + px
+    border-radius: $size-ten / 5 + px
 
 
 
